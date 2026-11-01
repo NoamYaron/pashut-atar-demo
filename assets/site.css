@@ -23,3 +23,11 @@ html.no-io .reveal{opacity:1;transform:none}
 @media (max-width:639px){footer{padding-bottom:140px}}
 @media (min-width:640px){.fab{display:none}}
 a:focus-visible,button:focus-visible{outline:3px solid #B5562F;outline-offset:3px}
+/* ביקורות */
+.rv{position:relative}.rv-stage{display:grid}.rv-card{grid-area:1/1;opacity:0;transform:translateY(6px);transition:opacity .6s ease,transform .6s ease;pointer-events:none}
+.rv-card.on{opacity:1;transform:none;pointer-events:auto}
+.rv-stars{color:#F4B400;letter-spacing:.12em}.rv-g{width:22px;height:22px;border-radius:50%;background:conic-gradient(#4285F4 0 25%,#34A853 0 50%,#FBBC05 0 75%,#EA4335 0);display:inline-block}
+.rv-av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;background:#4B5A3A}
+.rv-dots{display:flex;align-items:center;justify-content:center;gap:2px;flex-wrap:wrap}.rv-dots button{width:44px;height:44px;border-radius:9999px;background:transparent;display:grid;place-items:center;transition:all .3s}.rv-dots button::before{content:"";width:10px;height:10px;border-radius:9999px;background:#d6cbb8;transition:all .3s;display:block}.rv-dots button[aria-current="true"]::before{background:#B5562F;width:26px;height:10px}
+.rv-arrow{width:48px;height:48px;border-radius:50%;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.08);font-size:22px}
+@media (prefers-reduced-motion:reduce){.rv-card{transition:none}}
